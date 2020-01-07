@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Anubhav Srivastava</title>
+    <script src="particles.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="styling/css.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/anubhav.png" />
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <div id="main">
+      <div id="greetingContainer">
+        <div id="greeting">Hello World!</div>
+        <div id="name">
+          My name is
+          <img id="speaker" src="assets/speakerLight.svg" onclick="play()" />
+          Anubhav Srivastava
+        </div>
+        <ul id="mainIcons">
+          <li>
+            <a href="#" target="_blank"><img src="assets/resumeLight.svg"/></a>
+          </li>
+          <li>
+            <a href="https://github.com/anubhavcu" target="_blank"
+              ><img src="assets/githubLogoLight.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><img src="assets/linkedinLogoLight.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:anubhavksrivastava7@gmail.com" target="_top"
+              ><img src="assets/emailLight.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <figure id="selfContainer">
+        <img id="self" src="assets/anubhav.png" />
+        <figcaption>*me in a professional mood..</figcaption>
+      </figure>
+      <div id="introduction">
+        <p>
+          I'm a <span id="age"></span>-year-old, Indian-born, computer science
+          nerd with learning aspirations.
+        </p>
+        <p>
+          I'm fluent in <span class="important">javaScript </span> and
+          <span class="important">Python</span> with good knowledge of
+          <span class="important">Algorithms and Data Structures</span>.
+        </p>
+        <!-- <p>
+          I'm also the
+          <span class="important"
+            >co-founder and CEO of
+            <a href="https://www.algoexpert.io/product?src=cmw" target="_blank"
+              >AlgoExpert</a
+            ></span
+          >, a website that helps Software Engineers prepare for programming
+          interviews.
+        </p> -->
+      </div>
+      <h2 id="copyright">Copyright &copy; Anubhav Srivastava</h2>
+    </div>
+    <audio id="anubhav" src="assets/anubhav.mp3"></audio>
+    <!-- scripts -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+    <script>
+      window.onload = () => {
+        document.getElementById(
+          "copyright"
+        ).innerText += ` ${new Date().getFullYear()}`;
+        const birthdate = new Date("06/21/1996");
+        const currentdate = new Date();
+        const age =
+          (currentdate.getTime() - birthdate.getTime()) /
+          (1000 * 3600 * 24 * 365);
+        const actualage = Math.floor(age);
+        document.getElementById("age").innerText = `${actualage}`;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  color: rgb(28, 28, 30);
+}
+
+a {
+  color: #6772e5;
+  -ms-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #02203C;
+  cursor: pointer;
+}
+
+.important {
+  font-weight: 600;
+}
+
+p {
+  z-index: 1;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f9fc;
+  background-image: url("css.css");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
+#main {
+  height: 100%;
+}
+
+#greetingContainer {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  top: 20%;
+  left: 50%;
+  width: 355px;
+  height: 120px;
+}
+
+#speaker {
+  width: 25px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+}
+
+#speaker:hover {
+  transform: scale(1.1);
+}
+
+#greeting {
+  position: absolute;
+  z-index: 1;
+  font-size: 2.5em;
+  left: 0%;
+  /*font-family: Helvetica;*/
+  font-family: 'Ubuntu', sans-serif;
+  /*color: #02203C;*/
+}
+
+#name {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.25em;
+  /*font-family: Helvetica;*/
+  top: 40%;
+  right: 0%;
+}
+
+#mainIcons {
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  padding: 0 4px 0 4px;
+}
+
+ul > li > a > img {
+  width: 1.6vw;
+  cursor: pointer;
+}
+
+#mainIcons > li > a > img {
+  width: 30px;
+}
+
+ul > li > a > img:hover {
+  transform: scale(1.1);
+}
+
+#introduction {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  width: 35%;
+}
+
+#introduction > p {
+  margin-bottom: 20px;
+}
+
+#selfContainer {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 12%;
+}
+
+#self {
+  /*border: 1px solid #6715a5;*/
+  border-radius: 5px;
+  width: 22vw;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 15px;
+  width: 265px;
+}
